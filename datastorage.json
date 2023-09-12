@@ -1,0 +1,82 @@
+[
+    {
+      "carID": 1,
+      "carname": "Electro",
+      "model": "XXL",
+      "price": 15,
+      "stars": "*",
+      "options": [
+        "clock",
+        "speedometer",
+        "warranty"
+      ],
+      "extras": {
+        "comments": "no comments",
+        "consumptionPer100km": 4,
+        "powerSource": "hydrogen"
+      }
+    },
+    {
+      "carID": 2,
+      "carname": "Min IEco",
+      "model": "XL",
+      "price": 300,
+      "stars": "***",
+      "options": [
+        "repair set",
+        "coffee warmer",
+        "clock"
+      ],
+      "extras": {
+        "comments": "no comments",
+        "consumptionPer100km": 3,
+        "powerSource": "hybrid"
+      }
+    },
+    {
+      "carID": 3,
+      "carname": "Drof",
+      "model": "gold",
+      "price": 10,
+      "stars": "**",
+      "options": [
+        "clock",
+        "speedometer",
+        "coffee warmer"
+      ],
+      "extras": {
+        "comments": "no comments",
+        "consumptionPer100km": 1,
+        "powerSource": "pedalling"
+      }
+    },
+    {
+      "carID": 4,
+      "carname": "Drof",
+      "model": "silver",
+      "price": 200,
+      "stars": "**",
+      "options": [
+        "speedometer",
+        "hook",
+        "clock"
+      ],
+      "extras": {
+        "comments": "-",
+        "consumptionPer100km": 7,
+        "powerSource": "pedalling"
+      }
+    },
+    {
+      "carID": 5,
+      "carname": "Min IEco",
+      "model": "VIP",
+      "price": 200,
+      "stars": "**",
+      "options": [
+        "clock",
+        "radar",
+        "warranty"
+      ]
+    }
+  ]
