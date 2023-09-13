@@ -21,9 +21,21 @@ module.exports = class CarStorage {
         return cars;
     };
 
-    get_stars_of_car_by_carname(searchKey){
+    get_stars_of_car_by_carname(searchKey,searchValue){
         if(arguments.length<1){
             throw new Error('missing parameter')
+        };
+         
+        const cars =[]
+        for(const car of this.#storage){
+            if(car.carname===searchKey && car.model===searchValue){
+               cars.push(car.stars)
+            }
         }
+        return cars;
+    }
+
+    get_car_options(searchKey){
+        
     }
 }

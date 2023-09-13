@@ -48,15 +48,25 @@ describe('Testing get_stars_of_car_by_carname(searchKey) ', () => {
     });
     describe('Testing return of the stars of the car matching the carname or return null if doesnot match ', () => {
         const testValues = [
-            ["Electro",[]],
-            ["Min IEco",[]],
-            ["Drof",[]],
-            ["Min IEco",[]],
-            []
-
-        ]
+            ["Electro","XXL",["*"]],
+            ["Min IEco","XL",["***"]],
+            ["Drof","gold",["**"]],
+            ["Drof","silver",["**"]],
+            ["Min IEco","VIP",["**"]],
+            ["XXX","VIP",[]],
+            ["Ertf","",[]],
+        ];
+        test.each(testValues)('%s,%s returns %s',(cn,md,expectedResult)=>{
+            expect(storage.get_stars_of_car_by_carname(cn,md)).toEqual(expectedResult);
+        })
     });
     
 });
+
+describe('get_car_options(searchKey)', () => {
+    const storage = new CarStorage(cars);
+    
+});
+
 
 
