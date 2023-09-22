@@ -36,6 +36,9 @@ module.exports = class CarStorage {
     }
 
     get_car_options(searchKey){
-        
+        const options = this.#storage
+        .filter(car => car.carID === searchKey)
+        .map(car => car.options);
+      return options.length > 0 ? options[0] : [];
     }
 }

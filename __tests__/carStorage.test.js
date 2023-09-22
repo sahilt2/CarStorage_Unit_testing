@@ -65,7 +65,19 @@ describe('Testing get_stars_of_car_by_carname(searchKey) ', () => {
 
 describe('get_car_options(searchKey)', () => {
     const storage = new CarStorage(cars);
-    
+    const testValues = [
+        [1,[ "clock","speedometer","warranty"]],
+        [2,[ "repair set","coffee warmer","clock"]],
+        [3,[ "clock","speedometer","coffee warmer"]],
+        [4,[ "speedometer","hook","clock"]],
+        [5,[ "clock","radar","warranty"]],
+        [8,[]],
+        [,[]]
+    ];
+    test.each(testValues)('%s returns %s',(searchKey,expectedResult)=>{
+        expect(storage.get_car_options(searchKey)).toEqual(expectedResult);
+    })
+
 });
 
 
